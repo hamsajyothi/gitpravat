@@ -1,11 +1,17 @@
 var ajaxExample = angular.module('ajaxExample', []);
 ajaxExample.controller('mainController',function($scope,$http){
-    $scope.people;
+   var url = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
     $scope.getURL = function() {
+		 var urUrl = $scope.url;
+		 if (urUrl != "" && urUrl != undefined && url.test(urUrl)) {
+		 if (urUrl.indexOf("http") != 0) {
+              urUrl = "http://" + urUrl;
+            }
+		 }
           $http({
                method: 'POST',
                url:  BASEURL+'urlshort/create',
-               data: {url: $scope.url},
+               data: {url: urUrl},
 			   //headers: {'Content-Type': 'application/x-www-form-urlencoded'},
           }).then(function (response) {// on success
 				$scope.shorturlk=response.data;
