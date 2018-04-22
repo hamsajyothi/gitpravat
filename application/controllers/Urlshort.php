@@ -25,9 +25,11 @@ class Urlshort extends CI_Controller {
 			
 			 $postdata = file_get_contents("php://input");
     $request = json_decode($postdata);
-    $url = $request->url;
-    		
-			// validate url
+    //$url = $request->url;
+    
+	if (isset($request->url)) {	
+	$url = $request->url;
+	// validate url
 	if (filter_var($url, FILTER_VALIDATE_URL)) {	
 	$short_url = "";
 	$url = prep_url($url);
@@ -56,7 +58,11 @@ class Urlshort extends CI_Controller {
 	{
 				echo "Invalid URL!";
 			}
-		
+		}
+	else 
+	{
+				echo "Please Enter Your URL!";
+			}
 			
     }
     /**

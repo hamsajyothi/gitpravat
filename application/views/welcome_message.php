@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="zxx" ng-app="ajaxExample" ng-cloak>
 <head>
-<title>Url Shotener</title>
+<title>Your Url Shotener</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Astonish Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
@@ -27,9 +27,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="w3l-banner-layer">
 	<div class="container  text-center">
 			<div class="agileinfo-logo">
-					<h1><a href="<?php echo base_url(); ?>"><span class="fa fa-diamond" aria-hidden="true"></span>Url Shortener</a></h1>
+					<h1><a href="<?php echo base_url(); ?>"><span class="fa fa-diamond" aria-hidden="true"></span> Your Url Shortener</a></h1>
 			</div>	
-			<h2 class="txt-w3_agile">URL Shortener </h2>
+			<h2 class="txt-w3_agile">Shorten Url</h2>
 			<p>generate short URL by a click.</p>
 			<div class="sub-form-wthree" ng-controller="mainController">
 				<form action="#" method="post">
