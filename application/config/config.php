@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/short/';
-$config['link_length'] = 8;
+$config['link_length'] = 6;
 /*
 |--------------------------------------------------------------------------
 | Index File
